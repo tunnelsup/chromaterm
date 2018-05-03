@@ -216,11 +216,11 @@ void poll_sessions(void)
 
 						break;
 					}
-				}
-
-				if (gtd->mud_output_len)
-				{
-					readmud(ses);
+					
+					if (gtd->mud_output_len)
+					{
+						readmud(ses);
+					}
 				}
 			}
 		}
