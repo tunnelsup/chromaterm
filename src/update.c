@@ -221,6 +221,7 @@ void poll_sessions(void)
 				if (gtd->mud_output_len)
 				{
 					readmud(ses);
+					poll_input();
 				}
 			}
 		}
